@@ -1,0 +1,910 @@
+//variable
+$display:flex;
+$justify-content-around: space-around;
+$justify-content-between: space-between;
+$justify-content-center: center;
+$text-align:center;
+$color:black;
+
+
+//mixin
+@mixin betterlook {
+    display: $display;
+    justify-content: $justify-content-center;
+}
+
+@mixin navbar {
+    color: $color;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+@mixin bgw {
+    background-color: rgb(251, 249, 249);
+}
+@mixin line {
+    margin: 0 auto;
+    height: 2px;
+    width: 60px;
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(244, 93, 73);
+}
+@mixin titleh2 {
+    font-size: 2.3rem;
+    color: rgb(53, 50, 50);
+    text-align: center;
+}
+@mixin titlep {
+    margin: 10px 0 60px;
+    font-size: .9rem;
+    font-weight: 550;
+    color: rgb(86, 78, 78); 
+    text-align: center;
+}
+@mixin icon {
+    width: 16px;
+    height: 16px;
+    margin: 25px 5px 0;
+}
+
+
+
+//better look
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;    
+}
+
+body{
+    font-size: large;
+    font-family: "PT Sans Narrow", "sans-serif" ;
+}
+
+.container{
+    // width: 1140px;
+    margin: 0 auto;
+}
+
+// *{
+//     border:1px solid gray;
+// }
+
+// .section{
+//     min-height: 100px;
+//     // border-top: 5px dashed darkgoldenrod;
+// }
+
+//start
+
+
+#header {
+    & .container{
+        display: $display;
+        justify-content: $justify-content-around;
+        margin-top: 20px;
+    }
+    & .icons{
+        display: $display;
+    }
+    & .links{
+        display: $display;
+
+            .link a { 
+                @include navbar();
+                margin: 10px 10px;
+            }
+    }
+}
+//header img 
+#header{
+    & .container{
+        & .icons{
+            & .icon img{
+                width: 12px;
+                height: 12px;
+                margin: 10px 5px;
+                opacity: .7;
+            }
+        }
+        
+        & .logo img{
+            width: 95px;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        & .links{
+            & .icon img{
+                width: 12px;
+                height: 12px;
+                margin: 10px 5px;
+            }
+        }
+    }
+}
+
+.hr{
+    opacity: .2;
+}
+
+#about {
+    & .container{
+       @include betterlook();
+
+            & .navbar{
+                margin: 20px 0;
+            }
+
+            .navbar a {
+                @include navbar();
+                font-size: 0.9rem;
+                font-weight: 500;
+                margin: 0 15px;
+            }
+    }
+}
+
+//mixin intro
+@mixin introstyl {
+    background-size: cover;
+    overflow: hidden;
+    margin: 10px;
+}
+//intro img
+#intro{
+    & .all{
+        @include betterlook();
+        
+        .texts1{
+            background-image: url(./img/magazine/1.jpg);
+            @include introstyl();
+            width: 420px;
+            height: 410px;
+        }
+
+        .texts2{
+            background-image: url(./img/magazine/2.jpg);
+            @include introstyl();
+            width: 350px;
+            height: 410px;
+        }
+
+        .texts{
+            .text1{
+                background-image: url(./img/magazine/3.jpg);
+                @include introstyl();
+                width: 268px;
+                height: 198px;
+            }
+            .text2{
+                background-image: url(./img/magazine/4.jpg);
+                @include introstyl();
+                width: 268px;
+                height: 198px;
+            }
+        }
+    }
+}
+
+//intro mixin
+@mixin h6 {
+    color: rgb(244, 37, 37);
+    font-size: .7rem;
+    margin: 5px; 
+}
+
+@mixin h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(82, 72, 72);
+    margin: 5px;
+}
+
+@mixin p {
+    color: rgb(53, 50, 50);
+    font-weight: 700;
+    font-size: .7rem;
+    margin: 5px;
+}
+//intro texts
+#intro{
+    & .all{
+        .texts1{
+            & .t1 {
+            background-color: #fff;
+            padding: 20px 20px 35px 25px;
+            margin-top: 245px;
+            margin-left: 90px;
+            }
+        }
+        .texts1 h6{
+            @include h6();    
+        }
+        .texts1 h2{
+            @include h2();
+        }
+        .texts1 p {
+            @include p();
+        }
+
+        .texts2 .t2{
+            text-align: center;
+            margin-top: 130px;
+        }
+        .texts2 h6{
+            @include h6();
+            color: rgb(240, 238, 238);
+        }
+        .texts2 h2{
+            @include h2();
+            color: rgb(240, 238, 238);
+        }
+        .texts2 p{
+            @include p();
+            color: rgb(240, 238, 238);
+        }
+
+        & .texts{
+            .text1{
+
+                .t3{
+                    @include bgw();
+                    text-align: center;
+                    margin: 60px 20px;
+                    padding: 15px 5px ;
+                }
+
+                .t3 h6{
+                    @include h6();
+                }
+                .t3 p{
+                    @include h2();
+                    font-weight: 550;
+                    font-size: 1.3rem;
+                }
+            }
+            .text2{
+                .t4{
+                    @include bgw();
+                    text-align: center;
+                    margin: 60px 20px;
+                    padding: 15px 5px ;
+                }
+                .t4 h6{
+                    @include h6();
+                }
+                .t4 p{
+                    @include h2();
+                    font-weight: 550;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+
+//mixinpicture
+@mixin picturestyle {
+    overflow: hidden;
+    background-size: cover;
+    width: 220px;
+    height: 280px;
+    margin: 0 10px;
+    border: solid 5px rgb(244, 93, 73);
+}
+#picture{
+    & .container{
+        @include betterlook();
+        margin-top: 60px;
+
+        & .text1{
+            background-image: url(./img/magazine/5.jpg);
+            @include picturestyle();
+            width: 500px;
+            background-size: auto;
+
+        }
+
+        & .text2{
+            background-image: url(./img//magazine/6.jpg);
+            @include picturestyle();
+            border: solid 4px rgba(107, 234, 107, 0.642);
+        }
+
+        & .text3{
+            background-image: url(./img/magazine/7.jpg);
+            @include picturestyle();
+            border: solid 4px rgba(107, 234, 107, 0.642);
+        }
+    }
+}
+//text picture
+#picture{
+    .container{
+        .t1{
+            @include bgw();
+            padding: 50px 20px;
+            margin-left: 225px;
+        }
+        .t1 h6{
+            @include h6();
+            color: rgb(82, 72, 72);
+        }
+        .t1 p{
+            @include h2();
+            font-size: 1.6rem;
+            margin: 10px 0;
+        }
+        .t1 h5{
+            @include p();
+            font-size: .8rem;
+            color: rgb(101, 95, 95);
+        }
+
+        .t2{
+            margin: 190px 15px;
+        }
+        .t2 h6{
+            @include p();
+            color: rgb(240, 238, 238);
+            font-size: .9rem;
+        }
+        .t2 p{
+            @include h2();
+            color: rgb(240, 238, 238);
+            font-size: 1.2rem;
+        }
+
+        .t3{
+            margin: 190px 15px;
+        }
+        .t3 h6{
+            @include p();
+            color: rgb(240, 238, 238);
+            font-size: .9rem;
+        }
+        .t3 p{
+            @include h2();
+            color: rgb(240, 238, 238);
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#editor{
+    & .container{
+        margin-top: 70px;
+
+        .title{
+            & .line{
+                @include line();
+            }
+        }
+    }
+    & .framework{
+        @include betterlook();
+    }
+    & .parts{
+        display: $display;
+    }
+}
+
+//editor img style
+//mixin
+@mixin editorstyle {
+    width: 200px;
+    height: 230px;
+}
+#editor{
+    .container{
+        .framework{
+            & .text1{
+                background-image: url(./img/magazine/8.jpg);
+                background-size: cover;
+                width: 410px;
+                height: 480px;
+                margin-right: 10px;
+
+            }
+
+            & .parts{
+                .part{
+                    & .pic1 img{
+                        @include editorstyle();
+                        margin: 30px 10px 0 10px;
+                    }
+                }
+            }
+        }
+
+        & .parts{
+            .part{
+                & .pic2 img{
+                    @include editorstyle();
+                    margin: 0px 10px 30px 10px;
+                }
+            }
+        }
+    }
+}
+
+//text editor
+#editor{
+    .container{
+        .title h2{
+            @include titleh2();
+        }
+        .title p{
+            @include titlep();
+        }
+
+        & .framework{
+            .text1{
+                .t1{
+                    @include bgw();
+                    padding: 20px;
+                    margin: 330px 0 0 80px;
+                }
+                .t1 h6{
+                    @include h6();
+                }
+                .t1 p{
+                    @include h2();
+                }
+                .t1 h5{
+                    @include p();
+                }
+            }
+
+            .parts{
+                .text{
+                    margin: 25px 10px 20px;
+                }
+                .text h6{
+                    margin: 10px;
+                }
+                .text h3{
+                    color: rgb(64, 60, 60);
+                    margin-bottom:10px ; 
+                }
+                .text p{
+                    font-size: .9rem;
+                    font-weight: 600;
+                    color: rgb(141, 137, 137);
+                }
+            }
+        }
+    }
+}
+
+
+#travel{
+    & .title{
+        text-align: $text-align;
+        .line{
+            @include line();
+        }
+    }
+    & .container{
+        & .parts{
+            @include betterlook();
+        }
+
+        & .pictures{
+            .part1 , .part2 , .part3{
+                display: $display;
+            }
+        }
+        & .icons{
+            display: $display;
+        }
+    }
+}
+
+#travel{
+    .container{
+        background-color: rgba(244, 225, 229, 0.963);
+        margin-top: 80px ;
+        padding: 70px 0 190px;
+        .parts{
+            & .text1{
+                background-image: url(./img/magazine/11.jpg);
+                background-size: cover;
+                width: 530px;
+                height: 350px;
+                margin: 20px;
+            }
+
+            & .pictures{
+                & .pic img{
+                    width: 145px;
+                    height: 135px;
+                    margin-top: 20px;
+                }
+            }
+            .icons{
+                .icon img{
+                    @include icon();
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+//img travel
+#travel{
+    .container{
+        .title h2{
+            @include titleh2();
+        }
+        .title p{
+            @include titlep();
+        }
+
+        .parts{
+            .text1{
+                .t1{
+                    @include bgw();
+                    margin: 270px 20px;
+                    padding: 30px 35px;
+                }
+                .t1 h6{
+                    @include h6();
+                }
+                .t1 p{
+                    @include h2();
+                    font-size: 1.7rem;
+                }
+            }
+            .icons{
+                .icon a{
+                    @include navbar();
+                    color: rgb(116, 107, 107);
+                    font-weight: 550;
+                    font-size: .8rem;
+                }
+            }
+        }
+        .pictures{
+            .part1 , .part2 , .part3{
+                .text{
+                    @include bgw();
+                    margin: 20px 0 5px;
+                    padding: 10px 20px;
+                }
+                .text h6{
+                    @include h6();
+                }
+                .text p{
+                    @include h2();
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+#fashion1{
+    & .title{
+        text-align: $text-align;
+        .line{
+            @include line();
+        }
+    }
+    & .framework{
+        @include betterlook();
+
+        & .icons{
+            display: $display;
+        }
+    }
+}
+
+//fashion1 img style
+//mixin
+@mixin fashion1style {
+    background-size: cover;
+    // overflow: hidden;
+    width: 320px;
+    height: 330px;
+    margin: 0 10px;
+}
+#fashion1{
+    .container{
+        margin-top: 50px;
+        padding: 70px;
+
+        .framework{
+            margin-top: 40px;
+
+            & .text1{
+                background-image: url(./img/magazine/15.jpg);
+                @include fashion1style();
+
+                .icon img{
+                    @include icon();
+                    margin: 0 5px;
+                }
+            }
+
+            & .text2{
+                background-image: url(./img/magazine/16.jpg);
+                @include fashion1style();
+
+                .icon img{
+                    @include icon();
+                    margin: 0 5px;
+                }
+            }
+
+            & .text3{
+                background-image: url(./img/magazine/17.jpg);
+                @include fashion1style();
+
+                .icon img{
+                    @include icon();
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+//fashion1 text
+#fashion1{
+    .container{
+        .title h2{
+            @include titleh2();
+        }
+        .title p{
+            @include titlep();
+        }
+
+        .framework{
+            .text1 , .text2 , .text3{
+                .t1{
+                    @include bgw();
+                    margin: 270px 0 0 25px;
+                    padding: 25px 0 25px 25px;
+                }
+                .t1 h6{
+                    @include h6();
+                }
+                .t1 p{
+                    @include h2();
+                    font-size: 1.3rem;
+                }
+                .t1 {
+                    .icons{
+                        .icon a{
+                            @include navbar();
+                            color: rgb(116, 107, 107);
+                            font-weight: 550;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#fashion2{
+    & .title{
+        text-align: $text-align;
+        .line{
+            @include line();
+        }
+    }
+    & .framework{
+        @include betterlook();
+
+        & .icons{
+            display: $display;
+        }
+    }
+}
+//fashion2 img style
+//mixin
+@mixin fashion2style {
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 15px ;
+    width: 220px;
+    height: 215px;
+}
+
+#fashion2{
+    .container{
+        margin-top: 140px ;
+        margin-bottom: 120px;
+
+        .framework{
+            margin-top: 40px;
+
+            & .part1{
+                background-image: url(./img/magazine/18.jpg);
+                background-size: cover;
+                // overflow: hidden;
+                margin-right: 15px;
+                width: 420px;
+                height: 470px;
+
+                .icons{
+                    .icon img{
+                        @include icon();
+                    
+                    }
+                }
+            }
+
+            .parts1{
+                .firstpart{
+                    background-image: url(./img/magazine/19.jpg);
+                    @include fashion2style();
+                }
+
+                .secpart{
+                    background-image: url(./img/magazine/21.jpg);
+                    @include fashion2style();
+                    margin-top: 40px;
+                }
+            }
+
+            .parts2{
+                .firstpart{
+                    background-image: url(./img/magazine/20.jpg);
+                    @include fashion2style();
+                }
+
+                .secpart{
+                    background-image: url(./img/magazine/22.jpg);
+                    @include fashion2style();
+                    margin-top: 40px;
+                }                
+            }
+        }
+    }
+}
+
+//fashion2 text
+#fashion2{
+    .container{
+        .title h2{
+            @include titleh2();
+        }
+        .title p{
+            @include titlep();
+        }
+        .framework{
+            .part1{
+                .text{
+                    @include bgw();
+                    margin: 400px 0 0 25px;
+                    padding: 22px;
+                }
+                .text h6{
+                    @include h6();
+                }
+                .text p{
+                    @include h2();
+                    font-size: 1.3rem;
+                }
+                .text{
+                    .icons{
+                        .icon a{
+                            @include navbar();
+                            color: rgb(116, 107, 107);
+                            font-weight: 550;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+            & .parts1 , .parts2{
+                .firstpart , .secpart{
+                    .t{
+                        @include bgw();
+                        margin: 105px 0 0 15px;
+                        padding: 5px;
+                    }
+                    .t h6{
+                        @include h6();
+                    }
+                    .t p{
+                        @include h2();
+                        font-size: 1rem;
+                    }
+                    .t h5{
+                        @include p();
+                        color: rgb(108, 104, 104);
+                        font-size: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#gallery{
+    & .imgs{
+        @include betterlook();
+        margin-top: 200px;
+    }
+
+    & .imgs img{
+        overflow: hidden;
+        background-size: cover;
+        width: 222px;
+        height: 210px;
+    }
+}
+
+#footer{
+    & .container{
+        display: $display;
+        justify-content: $justify-content-between;
+        margin-top: 100px;
+        margin-bottom: 40px;
+
+        .logo img{
+            width: 100px;
+            height: 30px;
+            margin: 20px 0;
+        }
+    }
+}
+//mixin text
+@mixin style {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(149, 140, 140);
+    margin-bottom: 20px;
+}
+
+#footer{
+    .container{
+        .lists h3{
+            color: rgb(53, 50, 50);
+            margin-bottom:20px ;
+        }
+        .lists{
+            .text p{
+                @include style();
+            }
+            .address , .phone , .email , .cg{
+                @include style();
+            }
+        }
+        .form form{
+            .tfemail{
+            height: 40px;
+            width: 230px;
+            opacity: .2;
+            font-family: inherit;
+            border-radius: 20px;
+            margin-top:10px ;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

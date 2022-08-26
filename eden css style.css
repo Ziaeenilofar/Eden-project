@@ -1,0 +1,940 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: large;
+  font-family: "PT Sans Narrow", "sans-serif";
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+#header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .links .link a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 10px 10px;
+}
+
+#header .container .icons .icon img {
+  width: 12px;
+  height: 12px;
+  margin: 10px 5px;
+  opacity: .7;
+}
+
+#header .container .logo img {
+  width: 95px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+#header .container .links .icon img {
+  width: 12px;
+  height: 12px;
+  margin: 10px 5px;
+}
+
+.hr {
+  opacity: .2;
+}
+
+#about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .container .navbar {
+  margin: 20px 0;
+}
+
+#about .container .navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+#intro .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#intro .all .texts1 {
+  background-image: url(./img/magazine/1.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 10px;
+  width: 420px;
+  height: 410px;
+}
+
+#intro .all .texts2 {
+  background-image: url(./img/magazine/2.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 10px;
+  width: 350px;
+  height: 410px;
+}
+
+#intro .all .texts .text1 {
+  background-image: url(./img/magazine/3.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 10px;
+  width: 268px;
+  height: 198px;
+}
+
+#intro .all .texts .text2 {
+  background-image: url(./img/magazine/4.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 10px;
+  width: 268px;
+  height: 198px;
+}
+
+#intro .all .texts1 .t1 {
+  background-color: #fff;
+  padding: 20px 20px 35px 25px;
+  margin-top: 245px;
+  margin-left: 90px;
+}
+
+#intro .all .texts1 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#intro .all .texts1 h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+}
+
+#intro .all .texts1 p {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#intro .all .texts2 .t2 {
+  text-align: center;
+  margin-top: 130px;
+}
+
+#intro .all .texts2 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+  color: #f0eeee;
+}
+
+#intro .all .texts2 h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  color: #f0eeee;
+}
+
+#intro .all .texts2 p {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+  color: #f0eeee;
+}
+
+#intro .all .texts .text1 .t3 {
+  background-color: #fbf9f9;
+  text-align: center;
+  margin: 60px 20px;
+  padding: 15px 5px;
+}
+
+#intro .all .texts .text1 .t3 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#intro .all .texts .text1 .t3 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-weight: 550;
+  font-size: 1.3rem;
+}
+
+#intro .all .texts .text2 .t4 {
+  background-color: #fbf9f9;
+  text-align: center;
+  margin: 60px 20px;
+  padding: 15px 5px;
+}
+
+#intro .all .texts .text2 .t4 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#intro .all .texts .text2 .t4 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-weight: 550;
+  font-size: 1.3rem;
+}
+
+#picture .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+#picture .container .text1 {
+  background-image: url(./img/magazine/5.jpg);
+  overflow: hidden;
+  background-size: cover;
+  width: 220px;
+  height: 280px;
+  margin: 0 10px;
+  border: solid 5px #f45d49;
+  width: 500px;
+  background-size: auto;
+}
+
+#picture .container .text2 {
+  background-image: url(./img//magazine/6.jpg);
+  overflow: hidden;
+  background-size: cover;
+  width: 220px;
+  height: 280px;
+  margin: 0 10px;
+  border: solid 5px #f45d49;
+  border: solid 4px rgba(107, 234, 107, 0.642);
+}
+
+#picture .container .text3 {
+  background-image: url(./img/magazine/7.jpg);
+  overflow: hidden;
+  background-size: cover;
+  width: 220px;
+  height: 280px;
+  margin: 0 10px;
+  border: solid 5px #f45d49;
+  border: solid 4px rgba(107, 234, 107, 0.642);
+}
+
+#picture .container .t1 {
+  background-color: #fbf9f9;
+  padding: 50px 20px;
+  margin-left: 225px;
+}
+
+#picture .container .t1 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+  color: #524848;
+}
+
+#picture .container .t1 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+#picture .container .t1 h5 {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+  font-size: .8rem;
+  color: #655f5f;
+}
+
+#picture .container .t2 {
+  margin: 190px 15px;
+}
+
+#picture .container .t2 h6 {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+  color: #f0eeee;
+  font-size: .9rem;
+}
+
+#picture .container .t2 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  color: #f0eeee;
+  font-size: 1.2rem;
+}
+
+#picture .container .t3 {
+  margin: 190px 15px;
+}
+
+#picture .container .t3 h6 {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+  color: #f0eeee;
+  font-size: .9rem;
+}
+
+#picture .container .t3 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  color: #f0eeee;
+  font-size: 1.2rem;
+}
+
+#editor .container {
+  margin-top: 70px;
+}
+
+#editor .container .title .line {
+  margin: 0 auto;
+  height: 2px;
+  width: 60px;
+  display: block;
+  margin-top: 10px;
+  background-color: #f45d49;
+}
+
+#editor .framework {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#editor .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#editor .container .framework .text1 {
+  background-image: url(./img/magazine/8.jpg);
+  background-size: cover;
+  width: 410px;
+  height: 480px;
+  margin-right: 10px;
+}
+
+#editor .container .framework .parts .part .pic1 img {
+  width: 200px;
+  height: 230px;
+  margin: 30px 10px 0 10px;
+}
+
+#editor .container .parts .part .pic2 img {
+  width: 200px;
+  height: 230px;
+  margin: 0px 10px 30px 10px;
+}
+
+#editor .container .title h2 {
+  font-size: 2.3rem;
+  color: #353232;
+  text-align: center;
+}
+
+#editor .container .title p {
+  margin: 10px 0 60px;
+  font-size: .9rem;
+  font-weight: 550;
+  color: #564e4e;
+  text-align: center;
+}
+
+#editor .container .framework .text1 .t1 {
+  background-color: #fbf9f9;
+  padding: 20px;
+  margin: 330px 0 0 80px;
+}
+
+#editor .container .framework .text1 .t1 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#editor .container .framework .text1 .t1 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+}
+
+#editor .container .framework .text1 .t1 h5 {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#editor .container .framework .parts .text {
+  margin: 25px 10px 20px;
+}
+
+#editor .container .framework .parts .text h6 {
+  margin: 10px;
+}
+
+#editor .container .framework .parts .text h3 {
+  color: #403c3c;
+  margin-bottom: 10px;
+}
+
+#editor .container .framework .parts .text p {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #8d8989;
+}
+
+#travel .title {
+  text-align: center;
+}
+
+#travel .title .line {
+  margin: 0 auto;
+  height: 2px;
+  width: 60px;
+  display: block;
+  margin-top: 10px;
+  background-color: #f45d49;
+}
+
+#travel .container .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#travel .container .pictures .part1, #travel .container .pictures .part2, #travel .container .pictures .part3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#travel .container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#travel .container {
+  background-color: rgba(244, 225, 229, 0.963);
+  margin-top: 80px;
+  padding: 70px 0 190px;
+}
+
+#travel .container .parts .text1 {
+  background-image: url(./img/magazine/11.jpg);
+  background-size: cover;
+  width: 530px;
+  height: 350px;
+  margin: 20px;
+}
+
+#travel .container .parts .pictures .pic img {
+  width: 145px;
+  height: 135px;
+  margin-top: 20px;
+}
+
+#travel .container .parts .icons .icon img {
+  width: 16px;
+  height: 16px;
+  margin: 25px 5px 0;
+  margin: 0 5px;
+}
+
+#travel .container .title h2 {
+  font-size: 2.3rem;
+  color: #353232;
+  text-align: center;
+}
+
+#travel .container .title p {
+  margin: 10px 0 60px;
+  font-size: .9rem;
+  font-weight: 550;
+  color: #564e4e;
+  text-align: center;
+}
+
+#travel .container .parts .text1 .t1 {
+  background-color: #fbf9f9;
+  margin: 270px 20px;
+  padding: 30px 35px;
+}
+
+#travel .container .parts .text1 .t1 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#travel .container .parts .text1 .t1 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1.7rem;
+}
+
+#travel .container .parts .icons .icon a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #746b6b;
+  font-weight: 550;
+  font-size: .8rem;
+}
+
+#travel .container .pictures .part1 .text, #travel .container .pictures .part2 .text, #travel .container .pictures .part3 .text {
+  background-color: #fbf9f9;
+  margin: 20px 0 5px;
+  padding: 10px 20px;
+}
+
+#travel .container .pictures .part1 .text h6, #travel .container .pictures .part2 .text h6, #travel .container .pictures .part3 .text h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#travel .container .pictures .part1 .text p, #travel .container .pictures .part2 .text p, #travel .container .pictures .part3 .text p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+#fashion1 .title {
+  text-align: center;
+}
+
+#fashion1 .title .line {
+  margin: 0 auto;
+  height: 2px;
+  width: 60px;
+  display: block;
+  margin-top: 10px;
+  background-color: #f45d49;
+}
+
+#fashion1 .framework {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fashion1 .framework .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fashion1 .container {
+  margin-top: 50px;
+  padding: 70px;
+}
+
+#fashion1 .container .framework {
+  margin-top: 40px;
+}
+
+#fashion1 .container .framework .text1 {
+  background-image: url(./img/magazine/15.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 330px;
+  margin: 0 10px;
+}
+
+#fashion1 .container .framework .text1 .icon img {
+  width: 16px;
+  height: 16px;
+  margin: 25px 5px 0;
+  margin: 0 5px;
+}
+
+#fashion1 .container .framework .text2 {
+  background-image: url(./img/magazine/16.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 330px;
+  margin: 0 10px;
+}
+
+#fashion1 .container .framework .text2 .icon img {
+  width: 16px;
+  height: 16px;
+  margin: 25px 5px 0;
+  margin: 0 5px;
+}
+
+#fashion1 .container .framework .text3 {
+  background-image: url(./img/magazine/17.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 330px;
+  margin: 0 10px;
+}
+
+#fashion1 .container .framework .text3 .icon img {
+  width: 16px;
+  height: 16px;
+  margin: 25px 5px 0;
+  margin: 0 5px;
+}
+
+#fashion1 .container .title h2 {
+  font-size: 2.3rem;
+  color: #353232;
+  text-align: center;
+}
+
+#fashion1 .container .title p {
+  margin: 10px 0 60px;
+  font-size: .9rem;
+  font-weight: 550;
+  color: #564e4e;
+  text-align: center;
+}
+
+#fashion1 .container .framework .text1 .t1, #fashion1 .container .framework .text2 .t1, #fashion1 .container .framework .text3 .t1 {
+  background-color: #fbf9f9;
+  margin: 270px 0 0 25px;
+  padding: 25px 0 25px 25px;
+}
+
+#fashion1 .container .framework .text1 .t1 h6, #fashion1 .container .framework .text2 .t1 h6, #fashion1 .container .framework .text3 .t1 h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#fashion1 .container .framework .text1 .t1 p, #fashion1 .container .framework .text2 .t1 p, #fashion1 .container .framework .text3 .t1 p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+#fashion1 .container .framework .text1 .t1 .icons .icon a, #fashion1 .container .framework .text2 .t1 .icons .icon a, #fashion1 .container .framework .text3 .t1 .icons .icon a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #746b6b;
+  font-weight: 550;
+  font-size: .8rem;
+}
+
+#fashion2 .title {
+  text-align: center;
+}
+
+#fashion2 .title .line {
+  margin: 0 auto;
+  height: 2px;
+  width: 60px;
+  display: block;
+  margin-top: 10px;
+  background-color: #f45d49;
+}
+
+#fashion2 .framework {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fashion2 .framework .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fashion2 .container {
+  margin-top: 140px;
+  margin-bottom: 120px;
+}
+
+#fashion2 .container .framework {
+  margin-top: 40px;
+}
+
+#fashion2 .container .framework .part1 {
+  background-image: url(./img/magazine/18.jpg);
+  background-size: cover;
+  margin-right: 15px;
+  width: 420px;
+  height: 470px;
+}
+
+#fashion2 .container .framework .part1 .icons .icon img {
+  width: 16px;
+  height: 16px;
+  margin: 25px 5px 0;
+}
+
+#fashion2 .container .framework .parts1 .firstpart {
+  background-image: url(./img/magazine/19.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 15px;
+  width: 220px;
+  height: 215px;
+}
+
+#fashion2 .container .framework .parts1 .secpart {
+  background-image: url(./img/magazine/21.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 15px;
+  width: 220px;
+  height: 215px;
+  margin-top: 40px;
+}
+
+#fashion2 .container .framework .parts2 .firstpart {
+  background-image: url(./img/magazine/20.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 15px;
+  width: 220px;
+  height: 215px;
+}
+
+#fashion2 .container .framework .parts2 .secpart {
+  background-image: url(./img/magazine/22.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 15px;
+  width: 220px;
+  height: 215px;
+  margin-top: 40px;
+}
+
+#fashion2 .container .title h2 {
+  font-size: 2.3rem;
+  color: #353232;
+  text-align: center;
+}
+
+#fashion2 .container .title p {
+  margin: 10px 0 60px;
+  font-size: .9rem;
+  font-weight: 550;
+  color: #564e4e;
+  text-align: center;
+}
+
+#fashion2 .container .framework .part1 .text {
+  background-color: #fbf9f9;
+  margin: 400px 0 0 25px;
+  padding: 22px;
+}
+
+#fashion2 .container .framework .part1 .text h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#fashion2 .container .framework .part1 .text p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+#fashion2 .container .framework .part1 .text .icons .icon a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #746b6b;
+  font-weight: 550;
+  font-size: .8rem;
+}
+
+#fashion2 .container .framework .parts1 .firstpart .t, #fashion2 .container .framework .parts1 .secpart .t, #fashion2 .container .framework .parts2 .firstpart .t, #fashion2 .container .framework .parts2 .secpart .t {
+  background-color: #fbf9f9;
+  margin: 105px 0 0 15px;
+  padding: 5px;
+}
+
+#fashion2 .container .framework .parts1 .firstpart .t h6, #fashion2 .container .framework .parts1 .secpart .t h6, #fashion2 .container .framework .parts2 .firstpart .t h6, #fashion2 .container .framework .parts2 .secpart .t h6 {
+  color: #f42525;
+  font-size: .7rem;
+  margin: 5px;
+}
+
+#fashion2 .container .framework .parts1 .firstpart .t p, #fashion2 .container .framework .parts1 .secpart .t p, #fashion2 .container .framework .parts2 .firstpart .t p, #fashion2 .container .framework .parts2 .secpart .t p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #524848;
+  margin: 5px;
+  font-size: 1rem;
+}
+
+#fashion2 .container .framework .parts1 .firstpart .t h5, #fashion2 .container .framework .parts1 .secpart .t h5, #fashion2 .container .framework .parts2 .firstpart .t h5, #fashion2 .container .framework .parts2 .secpart .t h5 {
+  color: #353232;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 5px;
+  color: #6c6868;
+  font-size: .5rem;
+}
+
+#gallery .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+#gallery .imgs img {
+  overflow: hidden;
+  background-size: cover;
+  width: 222px;
+  height: 210px;
+}
+
+#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#footer .container .logo img {
+  width: 100px;
+  height: 30px;
+  margin: 20px 0;
+}
+
+#footer .container .lists h3 {
+  color: #353232;
+  margin-bottom: 20px;
+}
+
+#footer .container .lists .text p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #958c8c;
+  margin-bottom: 20px;
+}
+
+#footer .container .lists .address, #footer .container .lists .phone, #footer .container .lists .email, #footer .container .lists .cg {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #958c8c;
+  margin-bottom: 20px;
+}
+
+#footer .container .form form .tfemail {
+  height: 40px;
+  width: 230px;
+  opacity: .2;
+  font-family: inherit;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
